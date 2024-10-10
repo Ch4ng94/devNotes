@@ -1,0 +1,8 @@
+// Once elastic search is installed,
+// navigate to the directory where it is installed.
+// ex. /Users/andrewchang/tools/elasticsearch-7.10.2/bin
+
+// Once in the directory, run elastic search by running the command:
+// ./elasticsearch
+
+andrewchang@Andrews-MacBook-Air bin % ./elasticsearch

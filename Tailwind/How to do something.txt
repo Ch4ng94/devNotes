@@ -1,2 +1,0 @@
-//directory and command used for elastic search
-andrewchang@Andrews-MacBook-Air bin % ./elasticsearch
