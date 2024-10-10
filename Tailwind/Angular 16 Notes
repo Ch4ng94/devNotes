@@ -1,0 +1,78 @@
+Constructors are just instances of an class/object
+-----------------------------------------------------
+class className{
+
+    public constructor(){}
+
+}
+
+
+Dependencies can be injected into the constructors to be used:
+---------------------------------------------------------------
+ public constructor(private router: Router,
+                    private formBuilder: FormBuilder){}
+
+ Now within this class, Router and FormBuilder can be used
+
+-----------------------------------------------------------------
+
+
+
+routerLinks are meant specifically for anchor tags:
+<a [routerLink] = []> </a>
+
+click Handlers can be used on anything: (click)="this.someClickFunction()"
+-------------------------------------------------------------------------
+
+
+
+When a DIVs contents exceed the height of the actual DIV, the default result is that
+the contents will overflow out of the DIVs height:
+   default: class="overflow-y-visible"
+
+
+to enable scrolling of the overflow contents, use:
+    class="overflow-y-auto"
+
+
+otherwise, if you do not want scrolling or overflow, use:
+    class="overflow-y-hidden"
+
+
+class="overflow-y-scroll" shows the scrollbar always, but only allows scrolling
+when the content does have overflow.
+
+
+
+
+
+Adams favorite trick:
+to keep both a scrollbar and have a bottom border:
+ using style="height: calc(100vh - some px amount)" and having class="overflow-y-auto"
+
+the calc height styling takes into account of the view height of the users screen, then
+removing a certain amount of pixels to give a defined bottom border with no scrolling
+on the outer most DIV
+
+ie.
+       <div class="flex flex-col mat-elevation-z10 overflow-y-auto" style="height: calc( 100vh - 155px  )">
+
+           <div class="flex flex-col">
+             <div> DIV 1  Line 1</div>
+             <div> DIV 1  Line 2 </div>
+           </div>
+
+           <div class="flex flex-col">
+             <div> Line 1 </div>
+             <div> Line 2 </div>
+             <div> Line 3 </div>
+             <div> Line 4 </div>
+             <div> Line 5 </div>
+             <div> Line 6 </div>
+             <div> Line 7 </div>
+             <div> Line 8 </div>
+             <div> Line 9 </div>
+             <div> Line 10 </div>
+           </div>
+         </div>
+
