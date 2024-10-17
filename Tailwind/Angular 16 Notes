@@ -76,3 +76,16 @@ ie.
            </div>
          </div>
 
+
+
+10-17-24
+When running height with calc, anything that is above it becomes fixed in location
+ie.
+
+       <div> DIV 1 </div> <--- this would become fixed
+
+       <div class="overflow-y-auto" style:"height:calc(100vh - x pxs)"> DIV 2 </div>
+       !!!must always have overflow-y-auto
+
+
+use ng-container tags when using angular directives
